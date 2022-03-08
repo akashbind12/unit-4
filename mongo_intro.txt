@@ -1,0 +1,266 @@
+use assignment
+switched to db assignment
+> db
+assignment
+db.createCollection("users")
+{ "ok" : 1 }
+> show collections
+users
+> db.users.insert({"first_name":"Tally","last_name":"Passfield","email":"tpassfield0@bbb.org","gender":"Male","ip_address":"37.110.96.54","age":1})
+WriteResult({ "nInserted" : 1 })
+
+db.users.insertMany([{"first_name":"Shalom","last_name":"Childe","email":"schilde1@homestead.com","gender":"Female","ip_address":"216.169.186.62","age":2},{"first_name":"Shandee","last_name":"Meneo","email":"smeneo2@marketwatch.com","gender":"Male","ip_address":"205.189.117.100","age":3},{"first_name":"Pam","last_name":"Praundl","email":"ppraundl3@google.pl","gender":"Female","ip_address":"169.109.48.156","age":4},{"first_name":"Hallie","last_name":"Keepe","email":"hkeepe4@unc.edu","gender":"Male","ip_address":"35.47.159.121","age":5},{"first_name":"Riccardo","last_name":"Barwack","email":"rbarwack5@diigo.com","gender":"Female","ip_address":"225.156.167.26","age":6},{"first_name":"Ddene","last_name":"Chesterfield","email":"dchesterfield6@apple.com","gender":"Male","ip_address":"124.181.32.76","age":7},{"first_name":"Virge","last_name":"Dumblton","email":"vdumblton7@tmall.com","gender":"Female","ip_address":"104.236.209.193","age":8},{"first_name":"Carita","last_name":"Brayley","email":"cbrayley8@samsung.com","gender":"Female","ip_address":"7.159.192.29","age":9}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62278f2045bef3c775387aa8"),
+                ObjectId("62278f2045bef3c775387aa9"),
+                ObjectId("62278f2045bef3c775387aaa"),
+                ObjectId("62278f2045bef3c775387aab"),
+                ObjectId("62278f2045bef3c775387aac"),
+                ObjectId("62278f2045bef3c775387aad"),
+                ObjectId("62278f2045bef3c775387aae"),
+                ObjectId("62278f2045bef3c775387aaf")
+        ]
+}
+> db.users.find({})
+{ "_id" : ObjectId("62278a0145bef3c775387aa6"), "first_name" : "Tally", "last_name" : "Passfield", "email" : "tpassfield0@bbb.org", "gender" : "Male", "ip_address" : "37.110.96.54", "age" : 1 }
+{ "_id" : ObjectId("62278b5945bef3c775387aa7"), "first_name" : "Tally", "last_name" : "Passfield", "email" : "tpassfield0@bbb.org", "gender" : "Male", "ip_address" : "37.110.96.54", "age" : 1 }
+{ "_id" : ObjectId("62278f2045bef3c775387aa8"), "first_name" : "Shalom", "last_name" : "Childe", "email" : "schilde1@homestead.com", "gender" : "Female", "ip_address" : "216.169.186.62", "age" : 2 }
+{ "_id" : ObjectId("62278f2045bef3c775387aa9"), "first_name" : "Shandee", "last_name" : "Meneo", "email" : "smeneo2@marketwatch.com", "gender" : "Male", "ip_address" : "205.189.117.100", "age" : 3 }
+{ "_id" : ObjectId("62278f2045bef3c775387aaa"), "first_name" : "Pam", "last_name" : "Praundl", "email" : "ppraundl3@google.pl", "gender" : "Female", "ip_address" : "169.109.48.156", "age" : 4 }
+{ "_id" : ObjectId("62278f2045bef3c775387aab"), "first_name" : "Hallie", "last_name" : "Keepe", "email" : "hkeepe4@unc.edu", "gender" : "Male", "ip_address" : "35.47.159.121", "age" : 5 }
+{ "_id" : ObjectId("62278f2045bef3c775387aac"), "first_name" : "Riccardo", "last_name" : "Barwack", "email" : "rbarwack5@diigo.com", "gender" : "Female", "ip_address" : "225.156.167.26", "age" : 6 }
+{ "_id" : ObjectId("62278f2045bef3c775387aad"), "first_name" : "Ddene", "last_name" : "Chesterfield", "email" : "dchesterfield6@apple.com", "gender" : "Male", "ip_address" : "124.181.32.76", "age" : 7 }
+{ "_id" : ObjectId("62278f2045bef3c775387aae"), "first_name" : "Virge", "last_name" : "Dumblton", "email" : "vdumblton7@tmall.com", "gender" : "Female", "ip_address" : "104.236.209.193", "age" : 8 }
+{ "_id" : ObjectId("62278f2045bef3c775387aaf"), "first_name" : "Carita", "last_name" : "Brayley", "email" : "cbrayley8@samsung.com", "gender" : "Female", "ip_address" : "7.159.192.29", "age" : 9 }
+> db.users.fins({}).pretty()
+uncaught exception: TypeError: db.users.fins is not a function :
+@(shell):1:1
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62278a0145bef3c775387aa6"),
+        "first_name" : "Tally",
+        "last_name" : "Passfield",
+        "email" : "tpassfield0@bbb.org",
+        "gender" : "Male",
+        "ip_address" : "37.110.96.54",
+        "age" : 1
+}
+{
+        "_id" : ObjectId("62278b5945bef3c775387aa7"),
+        "first_name" : "Tally",
+        "last_name" : "Passfield",
+        "email" : "tpassfield0@bbb.org",
+        "gender" : "Male",
+        "ip_address" : "37.110.96.54",
+        "age" : 1
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aa8"),
+        "first_name" : "Shalom",
+        "last_name" : "Childe",
+        "email" : "schilde1@homestead.com",
+        "gender" : "Female",
+        "ip_address" : "216.169.186.62",
+        "age" : 2
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aa9"),
+        "first_name" : "Shandee",
+        "last_name" : "Meneo",
+        "email" : "smeneo2@marketwatch.com",
+        "gender" : "Male",
+        "ip_address" : "205.189.117.100",
+        "age" : 3
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aaa"),
+        "first_name" : "Pam",
+        "last_name" : "Praundl",
+        "email" : "ppraundl3@google.pl",
+        "gender" : "Female",
+        "ip_address" : "169.109.48.156",
+        "age" : 4
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aab"),
+        "first_name" : "Hallie",
+        "last_name" : "Keepe",
+        "email" : "hkeepe4@unc.edu",
+        "gender" : "Male",
+        "ip_address" : "35.47.159.121",
+        "age" : 5
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aac"),
+        "first_name" : "Riccardo",
+        "last_name" : "Barwack",
+        "email" : "rbarwack5@diigo.com",
+        "gender" : "Female",
+        "ip_address" : "225.156.167.26",
+        "age" : 6
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aad"),
+        "first_name" : "Ddene",
+        "last_name" : "Chesterfield",
+        "email" : "dchesterfield6@apple.com",
+        "gender" : "Male",
+        "ip_address" : "124.181.32.76",
+        "age" : 7
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aae"),
+        "first_name" : "Virge",
+        "last_name" : "Dumblton",
+        "email" : "vdumblton7@tmall.com",
+        "gender" : "Female",
+        "ip_address" : "104.236.209.193",
+        "age" : 8
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aaf"),
+        "first_name" : "Carita",
+        "last_name" : "Brayley",
+        "email" : "cbrayley8@samsung.com",
+        "gender" : "Female",
+        "ip_address" : "7.159.192.29",
+        "age" : 9
+}
+
+ db.users.findOne({"age" : 8})
+{
+        "_id" : ObjectId("62278f2045bef3c775387aae"),
+        "first_name" : "Virge",
+        "last_name" : "Dumblton",
+        "email" : "vdumblton7@tmall.com",
+        "gender" : "Female",
+        "ip_address" : "104.236.209.193",
+        "age" : 8
+}
+> db.users.findOne({ "_id" : ObjectId("62278f2045bef3c775387aaf")})
+{
+        "_id" : ObjectId("62278f2045bef3c775387aaf"),
+        "first_name" : "Carita",
+        "last_name" : "Brayley",
+        "email" : "cbrayley8@samsung.com",
+        "gender" : "Female",
+        "ip_address" : "7.159.192.29",
+        "age" : 9
+}
+ db.users.update({ "_id" : ObjectId("62278f2045bef3c775387aaf")},{$set : {"city" : "mumbai"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+>  db.users.findOne({ "_id" : ObjectId("62278f2045bef3c775387aaf")})
+{
+        "_id" : ObjectId("62278f2045bef3c775387aaf"),
+        "first_name" : "Carita",
+        "last_name" : "Brayley",
+        "email" : "cbrayley8@samsung.com",
+        "gender" : "Female",
+        "ip_address" : "7.159.192.29",
+        "age" : 9,
+        "city" : "mumbai"
+}
+> db.users.updateMany({ "age" : 1}, {$set : {"city" : "Navi Mumbai"}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+> db.users.find({ "age" : 1}).pretty()
+{
+        "_id" : ObjectId("62278a0145bef3c775387aa6"),
+        "first_name" : "Tally",
+        "last_name" : "Passfield",
+        "email" : "tpassfield0@bbb.org",
+        "gender" : "Male",
+        "ip_address" : "37.110.96.54",
+        "age" : 1,
+        "city" : "Navi Mumbai"
+}
+{
+        "_id" : ObjectId("62278b5945bef3c775387aa7"),
+        "first_name" : "Tally",
+        "last_name" : "Passfield",
+        "email" : "tpassfield0@bbb.org",
+        "gender" : "Male",
+        "ip_address" : "37.110.96.54",
+        "age" : 1,
+        "city" : "Navi Mumbai"
+}
+db.users.remove({ "city" : "mumbai"})
+WriteResult({ "nRemoved" : 1 })
+> db.users.removeMany({"city" : "Navi Mumbai"})
+uncaught exception: TypeError: db.users.removeMany is not a function :
+@(shell):1:1
+> db.users.remove({"city" : "Navi Mumbai"})
+WriteResult({ "nRemoved" : 2 })
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62278f2045bef3c775387aa8"),
+        "first_name" : "Shalom",
+        "last_name" : "Childe",
+        "email" : "schilde1@homestead.com",
+        "gender" : "Female",
+        "ip_address" : "216.169.186.62",
+        "age" : 2
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aa9"),
+        "first_name" : "Shandee",
+        "last_name" : "Meneo",
+        "email" : "smeneo2@marketwatch.com",
+        "gender" : "Male",
+        "ip_address" : "205.189.117.100",
+        "age" : 3
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aaa"),
+        "first_name" : "Pam",
+        "last_name" : "Praundl",
+        "email" : "ppraundl3@google.pl",
+        "gender" : "Female",
+        "ip_address" : "169.109.48.156",
+        "age" : 4
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aab"),
+        "first_name" : "Hallie",
+        "last_name" : "Keepe",
+        "email" : "hkeepe4@unc.edu",
+        "gender" : "Male",
+        "ip_address" : "35.47.159.121",
+        "age" : 5
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aac"),
+        "first_name" : "Riccardo",
+        "last_name" : "Barwack",
+        "email" : "rbarwack5@diigo.com",
+        "gender" : "Female",
+        "ip_address" : "225.156.167.26",
+        "age" : 6
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aad"),
+        "first_name" : "Ddene",
+        "last_name" : "Chesterfield",
+        "email" : "dchesterfield6@apple.com",
+        "gender" : "Male",
+        "ip_address" : "124.181.32.76",
+        "age" : 7
+}
+{
+        "_id" : ObjectId("62278f2045bef3c775387aae"),
+        "first_name" : "Virge",
+        "last_name" : "Dumblton",
+        "email" : "vdumblton7@tmall.com",
+        "gender" : "Female",
+        "ip_address" : "104.236.209.193",
+        "age" : 8
+}
+
+db.dropDatabase()
+{ "ok" : 1 }
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
