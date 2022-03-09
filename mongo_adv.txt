@@ -1,0 +1,381 @@
+ db.movie.find({"movie_name" :{$eq : "Me and Orson Welles"}}).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d48"),
+        "id" : 20,
+        "movie_name" : "Me and Orson Welles",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 15997
+}
+
+db.movie.find({"movie_name" :{$ne : "Me and Orson Welles"}}).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d35"),
+        "id" : 1,
+        "movie_name" : "Pawnbroker, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 14935
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d36"),
+        "id" : 2,
+        "movie_name" : "Rio Bravo",
+        "movie_genre" : "Western",
+        "production_year" : 1990,
+        "budget" : 13146
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d37"),
+        "id" : 3,
+        "movie_name" : "Sons of Perdition",
+        "movie_genre" : "Documentary",
+        "production_year" : 1994,
+        "budget" : 10753
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d38"),
+        "id" : 4,
+        "movie_name" : "Teenage Mutant Ninja Turtles",
+        "movie_genre" : "Action|Children|Comedy|Fantasy|Sci-Fi",
+        "production_year" : 1990,
+        "budget" : 18871
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d39"),
+        "id" : 5,
+        "movie_name" : "Henry & June",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 10295
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3a"),
+        "id" : 6,
+        "movie_name" : "Hall Pass",
+        "movie_genre" : "Comedy",
+        "production_year" : 1996,
+        "budget" : 16709
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3b"),
+        "id" : 7,
+        "movie_name" : "Death of a Salesman",
+        "movie_genre" : "Drama",
+        "production_year" : 1998,
+        "budget" : 13684
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3c"),
+        "id" : 8,
+        "movie_name" : "Cursed",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 1999,
+        "budget" : 11224
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3d"),
+        "id" : 9,
+        "movie_name" : "Twenty Bucks",
+        "movie_genre" : "Comedy",
+        "production_year" : 2001,
+        "budget" : 15173
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3e"),
+        "id" : 10,
+        "movie_name" : "Mouth to Mouth (Boca a boca)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2002,
+        "budget" : 17249
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3f"),
+        "id" : 11,
+        "movie_name" : "Above Us Only Sky",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 12490
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d40"),
+        "id" : 12,
+        "movie_name" : "Johnny Eager",
+        "movie_genre" : "Crime|Drama|Film-Noir|Romance",
+        "production_year" : 1998,
+        "budget" : 19616
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d41"),
+        "id" : 13,
+        "movie_name" : "Throw Down (Yau doh lung fu bong)",
+        "movie_genre" : "Drama",
+        "production_year" : 2016,
+        "budget" : 13576
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d42"),
+        "id" : 14,
+        "movie_name" : "BlinkyTM",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 1990,
+        "budget" : 11762
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d43"),
+        "id" : 15,
+        "movie_name" : "Chilly Scenes of Winter (Head Over Heels)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 9610
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d44"),
+        "id" : 16,
+        "movie_name" : "Hellbenders",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : 2006,
+        "budget" : 9286
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d45"),
+        "id" : 17,
+        "movie_name" : "Relationship Status: It's Complicated",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2015,
+        "budget" : 9870
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d46"),
+        "id" : 18,
+        "movie_name" : "Galaxina",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "production_year" : 1998,
+        "budget" : 19764
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d47"),
+        "id" : 19,
+        "movie_name" : "Bastards",
+        "movie_genre" : "Documentary",
+        "production_year" : 1999,
+        "budget" : 10607
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d49"),
+        "id" : 21,
+        "movie_name" : "Dark Knight, The",
+        "movie_genre" : "Action|Crime|Drama|IMAX",
+        "production_year" : 1998,
+        "budget" : 13596
+}
+Type "it" for more
+
+
+ db.movie.find({"budget" : {$gt : 15000}}).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d38"),
+        "id" : 4,
+        "movie_name" : "Teenage Mutant Ninja Turtles",
+        "movie_genre" : "Action|Children|Comedy|Fantasy|Sci-Fi",
+        "production_year" : 1990,
+        "budget" : 18871
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3a"),
+        "id" : 6,
+        "movie_name" : "Hall Pass",
+        "movie_genre" : "Comedy",
+        "production_year" : 1996,
+        "budget" : 16709
+}
+
+
+
+db.movie.find({"budget" : {$gte : 15000}}).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d38"),
+        "id" : 4,
+        "movie_name" : "Teenage Mutant Ninja Turtles",
+        "movie_genre" : "Action|Children|Comedy|Fantasy|Sci-Fi",
+        "production_year" : 1990,
+        "budget" : 18871
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d3a"),
+        "id" : 6,
+        "movie_name" : "Hall Pass",
+        "movie_genre" : "Comedy",
+        "production_year" : 1996,
+        "budget" : 16709
+}
+
+
+db.movie.find({"budget" : {$lt : 15000}}).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d35"),
+        "id" : 1,
+        "movie_name" : "Pawnbroker, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 14935
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d36"),
+        "id" : 2,
+        "movie_name" : "Rio Bravo",
+        "movie_genre" : "Western",
+        "production_year" : 1990,
+        "budget" : 13146
+}
+
+
+ db.movie.find({"budget" : {$lte : 15000}}).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d35"),
+        "id" : 1,
+        "movie_name" : "Pawnbroker, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 14935
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d36"),
+        "id" : 2,
+        "movie_name" : "Rio Bravo",
+        "movie_genre" : "Western",
+        "production_year" : 1990,
+        "budget" : 13146
+}
+
+ db.movie.find({$and : [{"production_year" : {$gt : 2000}}, {"budget" : {$gt : 10000}}] }).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d35"),
+        "id" : 1,
+        "movie_name" : "Pawnbroker, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 14935
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d39"),
+        "id" : 5,
+        "movie_name" : "Henry & June",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 10295
+}
+
+
+ db.movie.find({$or : [{"production_year" : {$gt : 2000}}, {"budget" : {$gt : 10000}}] }).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d35"),
+        "id" : 1,
+        "movie_name" : "Pawnbroker, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 14935
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d36"),
+        "id" : 2,
+        "movie_name" : "Rio Bravo",
+        "movie_genre" : "Western",
+        "production_year" : 1990,
+        "budget" : 13146
+}
+
+ db.movie.find({$nor : [{"production_year" : {$gt : 2000}}, {"budget" : {$gt : 10000}}] }).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d43"),
+        "id" : 15,
+        "movie_name" : "Chilly Scenes of Winter (Head Over Heels)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 9610
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d97"),
+        "id" : 99,
+        "movie_name" : "Tommy",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 1995,
+        "budget" : 9536
+}
+
+ db.movie.find({$or : [{"production_year" : {$lte : 2000}}, {"budget" : {$lte : 10000}}] }).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d36"),
+        "id" : 2,
+        "movie_name" : "Rio Bravo",
+        "movie_genre" : "Western",
+        "production_year" : 1990,
+        "budget" : 13146
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d37"),
+        "id" : 3,
+        "movie_name" : "Sons of Perdition",
+        "movie_genre" : "Documentary",
+        "production_year" : 1994,
+        "budget" : 10753
+}
+
+ db.movie.find({$and : [{"production_year" : {$gte : 2000}},{"production_year" : {$lte : 2010}}]}).pretty()
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d35"),
+        "id" : 1,
+        "movie_name" : "Pawnbroker, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 14935
+}
+{
+        "_id" : ObjectId("6228e3e47974a2a11f059d39"),
+        "id" : 5,
+        "movie_name" : "Henry & June",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 10295
+}
+
+db.movie.find({},{movie_name : 1,production_year : 1, _id:0}).sort({production_year:-1,movie_name:1}).pretty()
+
+{ "movie_name" : "And the Band Played On", "production_year" : 2020 }
+{ "movie_name" : "Arsenic and Old Lace", "production_year" : 2020 }
+{ "movie_name" : "Belly of the Beast", "production_year" : 2020 }
+{ "movie_name" : "Blood Diamond", "production_year" : 2020 }
+{ "movie_name" : "Capote", "production_year" : 2020 }
+{ "movie_name" : "Cirque du Soleil: Worlds Away", "production_year" : 2020 }
+{ "movie_name" : "Cosmopolis", "production_year" : 2020 }
+{ "movie_name" : "Erotic Man, The", "production_year" : 2020 }
+{
+        "movie_name" : "Flight of the Conchords: A Texan Odyssey",
+        "production_year" : 2020
+}
+{ "movie_name" : "Guns, Girls and Gambling", "production_year" : 2020 }
+{ "movie_name" : "Jumanji", "production_year" : 2020 }
+{ "movie_name" : "Keep the Lights On", "production_year" : 2020 }
+{ "movie_name" : "Kiss Kiss Bang Bang", "production_year" : 2020 }
+{ "movie_name" : "Matrix, The", "production_year" : 2020 }
+{ "movie_name" : "Somers Town", "production_year" : 2020 }
+{
+        "movie_name" : "The Legend of Awesomest Maximus",
+        "production_year" : 2020
+}
+{ "movie_name" : "Violets Are Blue...", "production_year" : 2020 }
+{ "movie_name" : "White Countess, The", "production_year" : 2020 }
+{ "movie_name" : "Wrong Box, The", "production_year" : 2020 }
+{ "movie_name" : "After Porn Ends", "production_year" : 2019 }
+Type "it" for more
+
+
+ db.movie.find({},{movie_name : 1,production_year : 1, _id:0}).sort({production_year:-1,movie_name:1}).skip(10).limit(5).pretty()
+{ "movie_name" : "Jumanji", "production_year" : 2020 }
+{ "movie_name" : "Keep the Lights On", "production_year" : 2020 }
+{ "movie_name" : "Kiss Kiss Bang Bang", "production_year" : 2020 }
+{ "movie_name" : "Matrix, The", "production_year" : 2020 }
+{ "movie_name" : "Somers Town", "production_year" : 2020 }
+
+
+
